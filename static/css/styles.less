@@ -1,0 +1,122 @@
+@import './font-play.css';
+
+@solarized-base03:    #002b36;
+@solarized-base02:    #073642;
+@solarized-base01:    #586e75;
+@solarized-base00:    #657b83;
+@solarized-base0:     #839496;
+@solarized-base1:     #93a1a1;
+@solarized-base2:     #eee8d5;
+@solarized-base3:     #fdf6e3;
+@solarized-yellow:    #b58900;
+@solarized-orange:    #cb4b16;
+@solarized-red:       #dc322f;
+@solarized-magenta:   #d33682;
+@solarized-violet:    #6c71c4;
+@solarized-blue:      #268bd2;
+@solarized-cyan:      #2aa198;
+@solarized-green:     #859900;
+
+body {
+  background-color: @solarized-base03;
+  color: @solarized-base1;
+}
+
+div.wrap {
+  background-color: @solarized-base02;
+  font-family: 'PlayRegular';
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 0;
+  width: 320px;
+}
+
+div.group {
+  input, button {
+    border-bottom: 0;
+  }
+}
+div.group:last-child {
+  border-bottom: 1px solid @solarized-base00;
+}
+
+input, button {
+  background-color: @solarized-base3;
+  border: 1px solid @solarized-base00;
+  box-sizing: border-box;
+  color: @solarized-base01;
+  display: inline-block;
+  font-family: 'PlayRegular';
+  font-size: 14px;
+  padding: 4px;
+  outline: 0;
+  transition: all 200ms;
+  width: 100%;
+}
+input:hover, button:hover {
+  background-color: @solarized-base2;
+  border: 1px solid @solarized-base01;
+  transition: all 200ms;
+}
+input:focus {
+  background-color: @solarized-base1;
+  border: 1px solid @solarized-base03;
+  color:  @solarized-base2;
+  transition: all 200ms;
+}
+
+p.title {
+  font-family: 'PlayBold';
+  font-size: 20px;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+}
+
+div.content {
+  padding: 4px;
+}
+
+div.item {
+  border: 1px solid #444;
+
+  p.item-url {
+    background-color: @solarized-base3;
+    border: 1px solid @solarized-base00;
+    font-family: 'PlayBold';
+    color: @solarized-base02;
+    padding: 4px;
+    margin: 0;
+    text-align: center;
+  }
+
+  input.item-email, input.item-login, input.item-pwd-show, input.item-pass {
+    display: inline-block;
+  }
+
+  input.item-email, input.item-login {
+    width: 50%;
+  }
+
+  input.item-pass {
+    width: 90%;
+  }
+
+  button.item-pwd-show {
+    width: 10%;
+  }
+}
+
+div.footer {
+  text-align: center;
+  padding: 4px;
+
+  a {
+    border-bottom: 1px dashed @solarized-base1;
+    color: @solarized-base1;
+    text-decoration: none;
+  }
+  a:hover {
+    border-bottom-style: solid;
+  }
+}
