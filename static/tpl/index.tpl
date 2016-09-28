@@ -7,7 +7,7 @@
 -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>iiiypuk</title>
+  <title>pas5</title>
   <link rel="stylesheet/less" type="text/css" href="/static/styles.less">
   <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png">
   <script type="text/javascript" src="/static/less.min.js"></script>
